@@ -192,3 +192,8 @@ dependencies:
   - pip:
     - pyqt5-sip==12.11.0
 prefix: /opt/anaconda3/envs/DistributedComputing
+# Setting environment variables for this specific conda environment
+# to resolve Issues with Driver and Worker Processes having different versions of python
+variables:
+  PYSPARK_PYTHON: /opt/anaconda3/envs/DistributedComputing/bin/python
+  PYSPARK_DRIVER_PYTHON: /opt/anaconda3/envs/DistributedComputing/bin/python
