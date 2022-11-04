@@ -192,3 +192,6 @@ dependencies:
   - pip:
     - pyqt5-sip==12.11.0
 prefix: /opt/anaconda3/envs/DistributedComputing
+variables:
+  PYSPARK_PYTHON: /opt/anaconda3/envs/DistributedComputing/bin/python
+  PYSPARK_DRIVER_PYTHON: /opt/anaconda3/envs/DistributedComputing/bin/python
